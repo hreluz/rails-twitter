@@ -9,6 +9,9 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root "home#index"
 
-  get "login", to: "login#new"
-  post "login", to: "login#create"
+  get "register", to: "auth#register"
+  post "register", to: "auth#create"
+
+  get "login", to: "auth#login"
+  post "login", to: "auth#authenticate"
 end

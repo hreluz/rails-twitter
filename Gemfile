@@ -65,4 +65,8 @@ group :development, :test do
   gem 'rspec-rails', '~> 7.0.0'
 end
 
+group :test do
+  gem 'database_cleaner-active_record'
+end
+
 gem 'bcrypt', '~> 3.1.7'

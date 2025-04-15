@@ -1,0 +1,13 @@
+<% if flash[:alert] %>
+  <div class="alert">
+    <%= flash[:alert] %>
+  </div>
+<% end %>
+
+<h1>Register</h1>
+<%= form_with model: @user, url: register_path do |form| %>
+  <%= form.email_field :email %>
+  <%= form.password_field :password %>
+  <%= form.password_field :password_confirmation %>
+  <%= form.submit "Create Account" %>
+<% end %>

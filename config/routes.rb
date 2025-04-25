@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'tweets/index'
+  get 'tweets/show'
+  get 'tweets/create'
   get 'home/index'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

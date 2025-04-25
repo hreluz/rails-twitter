@@ -12,7 +12,6 @@ class AuthController < ApplicationController
             session[:user_id] = @user.id
           redirect_to root_path, notice: "Account created successfully"
         else
-            puts "DEBUG: errors = #{@user.errors.full_messages}"
           render :register, status: :unprocessable_entity
         end
     end
